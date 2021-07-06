@@ -17,7 +17,7 @@ html {
 
 :root {
   --color-heading: #575757;
-  --color-card-text: #18191F;
+  --color-card-text: #18191f;
   --color-shadow-gray: #e7e4e0;
 }
 
@@ -69,7 +69,7 @@ h3 {
   text-decoration: none;
   text-transform: capitalize;
   box-shadow: 0 0 5rem #e7c2a1;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn:hover {
@@ -121,7 +121,7 @@ h3 {
   list-style: none;
 }
 
-.nav__item .btn  {
+.nav__item .btn {
   color: white;
 }
 
@@ -129,15 +129,23 @@ h3 {
   padding: 1rem;
 }
 
-.nav__item a{
+.nav__item:hover {
+  color: #ff1e1e;
+  border-bottom: 2px solid #ff1e1e;
+}
+
+.nav__item:hover a {
+  color: #ff1e1e;
+}
+
+.nav__item a {
   color: #fba24f;
   text-decoration: none;
 }
 
-.nav__item a:hover{
+/* .nav__item a:hover {
   color: #ff1e1e;
-  border-bottom: 2px solid #ff1e1e;
-}
+} */
 
 /********************** Header section styling  **********************/
 
@@ -192,7 +200,7 @@ h3 {
   justify-content: center;
 }
 
-.about-me__img img{
+.about-me__img img {
   width: 33rem;
 }
 
@@ -217,7 +225,6 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
 
 /* Recipies cards */
 .recipies__card {
@@ -274,11 +281,77 @@ h3 {
   font-size: 1.6rem;
 }
 
+/********************** Newsletter styling  **********************/
+
+.newsletter {
+  width: 122rem;
+  background-image: url(img/newsletterBackground2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 20px;
+  margin: 10rem auto;
+}
+
+.newsletter__text {
+  margin-left: 3rem;
+  background-color: #fdeaec;
+  padding: 2rem;
+}
+
+.newsletter__text h2 {
+  width: 50rem;
+  font-weight: 800;
+  margin-top: 3rem;
+}
+
+.newsletter__text p {
+  width: 50rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.email-input {
+  margin: 2rem 0;
+}
+
+.input-field {
+  height: 50px;
+  width: 300px;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 100px;
+  border: 1px solid #fba24f;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-field:hover {
+  transform: scale(1.03);
+}
+
+.input-field:current {
+  border: 1px solid;
+}
+
+.email-input .btn {
+  border: none;
+}
+
+.newsletter__img {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 2rem;
+  border-radius: 15px;
+}
+
 /********************** Footer styling  **********************/
 
 .footer {
   height: 24rem;
-  background-color: #0B0D17;
+  background-color: #0b0d17;
   padding: 2rem;
   margin-top: 5rem;
 }
