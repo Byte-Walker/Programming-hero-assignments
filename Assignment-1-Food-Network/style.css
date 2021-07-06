@@ -1,3 +1,4 @@
+/* Base default styling */
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +11,15 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 html {
   font-size: 62.5%;
 }
+
+/* Typography */
 
 h1 {
   font-size: 5.5rem;
@@ -25,37 +28,22 @@ h1 {
   text-transform: capitalize;
 }
 
-.half-width {
-  width: 50%;
+h2 {
+  font-size: 3.5rem;
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
+/* Reusable styling classes */
+.half-width {
+  width: 50%;
 }
 
 .orange-text {
   background-image: linear-gradient(45deg, #fba24f, #f05656);
   -webkit-background-clip: text;
   color: transparent;
-}
-
-.header__text-box {
-  width: 100%;
-}
-
-.header__heading {
-  width: 60rem;
-}
-
-.header__paragraph {
-  color: #828282;
-  width: 50rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin: 3.5rem 0;
 }
 
 .btn {
@@ -70,4 +58,59 @@ h1 {
   text-decoration: none;
   text-transform: capitalize;
   box-shadow: 0 0 5rem #e7c2a1;
+}
+
+/* Header section styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+}
+
+.header__text-box {
+  margin-left: 3rem;
+}
+
+.header__heading {
+  width: 60rem;
+}
+
+.header__paragraph {
+  color: #828282;
+  width: 50rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 3.5rem 0;
+}
+
+/* About me section styling */
+.about-me {
+  display: flex;
+  align-items: center;
+  background-image: url(img/aboutMeBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+  margin: 4rem 0;
+}
+
+.about-me__text-box {
+  width: 50rem;
+}
+
+.about-me__text-box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-bottom: 6rem;
+}
+
+.about-me__img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me__img img{
+  width: 33rem;
 }
