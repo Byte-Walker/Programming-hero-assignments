@@ -6,7 +6,8 @@
 }
 
 :root {
-  --heading-color: #575757;
+  --color-heading: #575757;
+  --color-card-text: #18191F;
 }
 
 body {
@@ -24,15 +25,23 @@ html {
 h1 {
   font-size: 5.5rem;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--color-heading);
   text-transform: capitalize;
 }
 
 h2 {
   font-size: 3.5rem;
-  color: var(--heading-color);
+  color: var(--color-heading);
   text-transform: capitalize;
   margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 1.6rem 0;
+  color: var(--color-card-text);
+  text-transform: capitalize;
 }
 
 /* Reusable styling classes */
@@ -40,7 +49,7 @@ h2 {
   width: 50%;
 }
 
-.orange-text {
+.orange-gradient-text {
   background-image: linear-gradient(45deg, #fba24f, #f05656);
   -webkit-background-clip: text;
   color: transparent;
@@ -113,4 +122,71 @@ h2 {
 
 .about-me__img img{
   width: 33rem;
+}
+
+/* Recipies section styling */
+.recipies {
+  margin: 5rem 0;
+}
+
+.recipies__text-box {
+  width: 70rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.recipies__text-box p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.recipies__list {
+  display: flex;
+  justify-content: center;
+}
+
+.recipies__card {
+  width: fit-content;
+  padding: 2.2rem;
+  margin: 3rem;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 50px rgb(226, 221, 221);
+}
+
+.recipies__card__img {
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+}
+
+.recipies__card__description {
+  max-width: 32rem;
+}
+
+.recipies__card__paragraph {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--color-card-text);
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+
+.footer {
+  height: 24rem;
+  background-color: #0B0D17;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
 }
