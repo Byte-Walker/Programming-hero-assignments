@@ -4,3 +4,4 @@ This repository contains my solutions for all the assignments of Programming Her
 
 Below are the links of the deployed sites : 
 1. Food Network : https://byte-walker.github.io/Programming-hero-assignments/Assignment-1-Food-Network/
+2. Responsive Football : https://byte-walker.github.io/Programming-hero-assignments/Assignment-2-Responsive-Football/
