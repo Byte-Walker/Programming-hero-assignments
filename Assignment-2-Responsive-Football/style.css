@@ -291,3 +291,188 @@ a {
   line-height: 2.4rem;
   font-weight: normal;
 }
+
+
+
+/* ---------------------------------------
+######## Media Query ########
+---------------------------------------- */
+
+/*----------------------- Smaller laptop screens -----------------------*/
+
+@media only screen and (max-width: 1199px) {
+
+  /* Header section */
+  .nav-bar {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .header__content {
+    width: 100%;   
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .header__text-box h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    width: 90%;
+  }
+
+  /* Players section */
+  .players {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .player {
+    width: 100%;
+  }
+
+  .player__thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Highlights section */
+  .highlights {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    grid-column-gap: 4rem;
+    justify-items: center;
+  }
+
+  .highlights__text-box h2 {
+    font-size: 3.7rem;
+    width: 90%;
+  }
+
+  .highlights__text-box p {
+    width: 80%;
+  }
+
+  .footer {
+    width: 40rem;
+  }
+}
+
+/* .header__content, .players, .highlights, .footer {
+  display: none;
+} */
+
+/*----------------------- Tablet screens -----------------------*/
+
+@media only screen and (max-width: 899px) {
+
+  /* Header section */
+  .nav-bar {
+    display: none;
+  }
+
+  .header__content {
+    padding: 3rem 2rem;
+    grid-column-gap: 5rem;
+  }
+
+  .header__text-box h1 {
+    font-size: 3.7rem;
+    line-height: 6rem;
+    width: 100%;
+  }
+
+  /* Players section */
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Highlights section */
+  .highlights {
+    padding: 2rem;
+
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-column-gap: 2rem;
+    justify-items: center;
+  }
+
+  
+
+  .highlights__text-box p {
+    width: 100%;
+  }
+
+  .footer {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .highlights {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+}
+
+/*----------------------- Mobile screens -----------------------*/
+
+@media only screen and (max-width: 639px) {
+
+  /* Header section */
+
+  .header__content {
+    padding: 3rem 2rem;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+  }
+
+  .header__text-box h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+
+  .highlights__text-box h2 {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    width: 100%;
+  }
+
+  .highlights__text-box p {
+    width: 90%;
+  }
+
+  .footer {
+    width: 32rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .header__text-box h1 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  .players {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights__text-box p {
+    width: 100%;
+  }
+
+  .footer {
+    width: 26rem;
+  }
+}
+
+@media only screen and (max-width: 289px) {
+  .footer {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
