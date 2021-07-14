@@ -35,6 +35,18 @@ a {
 
   font-size: 1.6rem;
   font-weight: 500;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.01);
+  background-color: #cf2060;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 /* ----------------------------------
@@ -63,11 +75,26 @@ a {
 .nav-item {
   list-style-type: none;
   margin-right: 3.6rem;
+  padding: 5px;
 }
 
+
+
 .nav-item a {
+  display: inline-block;
+
   font-size: 1.6rem;
   font-weight: 500;
+  
+  transition: all .3s;
+}
+
+.nav-item a:hover {
+  transform: translateY(-5px);
+}
+
+.nav-item a:active {
+  transform: translateY(0);
 }
 
 .nav-bar .btn i {
@@ -98,6 +125,11 @@ a {
 
 .header__banner {
   width: 100%;
+  transition: all 0.3s;
+}
+
+.header__banner:hover {
+  transform: scale(1.03);
 }
 
 /* ---------------------------------------
@@ -117,8 +149,13 @@ a {
 .player {
   width: 33rem;
   padding: 15px;
-
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}
+
+.player:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
 }
 
 .player__thumbnail {
@@ -162,8 +199,12 @@ a {
 }
 
 .highlights img {
-  width: 56.7rem;
-  height: 42.7rem;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.highlights img:hover {
+  transform: scale(1.03);
 }
 
 .highlights__text-box h2 {
@@ -194,7 +235,7 @@ a {
   text-align: center;
 }
 
-.footer img{
+.footer a img {
   width: 100%;
 }
 
@@ -204,13 +245,44 @@ a {
 }
 
 .footer__social-icons i {
+
   background-color: rgba(0, 0, 0, 0.1);
-  color: #969BAB;
+  color: #969bab;
   padding: 7px;
   border-radius: 50%;
+
+  transition: transform 0.2s;
 }
 
-.footer__social-icons i:not(:last-child) {
+.footer__social-icons i:hover {
+  transform: scale(1.1);
+}
+
+.fa-instagram:hover {
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.fa-dribbble:hover {
+  background-color: #ea4c89;
+  color:white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.fa-youtube:hover {
+  color:#FF0000;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer__social-icons a:not(:last-child) {
   margin-right: 1.2rem;
 }
 
@@ -219,4 +291,3 @@ a {
   line-height: 2.4rem;
   font-weight: normal;
 }
-
